@@ -1,0 +1,13 @@
+{
+    "Logs": [
+        {
+            "date": "02-02-2022",
+            "activities": [
+                {
+                    "activity": "run",
+                    "time": 1
+                }
+            ]
+        }
+    ]
+}
