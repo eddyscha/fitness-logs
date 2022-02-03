@@ -25,18 +25,25 @@ async def get_activities():
         logs = json.load(f)
         return logs
 
+@app.get("/activities/{activity_id}")
+async def get_activities(activity_id):
+    with open('data/activities.json') as f:
+        logs = json.load(f)
+        activity = logs["data"].get(activity_id)
+        return logs
+
+@app.post("/activities")
+async def add_logs(log: Log):
+    with open('data/activities.json', 'r+') as f:
+        logs = json.load(f)
+
 @app.get("/weights")
 async def get_weights():
     with open('data/weight.json') as f:
         logs = json.load(f)
         return logs
 
-@app.post("/activities/add")
-async def add_logs(log: Log):
-    with open('data/activities.json', 'r+') as f:
-        logs = json.load(f)
-
-@app.post("/weights/add")
+@app.post("/weights")
 async def add_logs(log: Log):
     with open('data/weights.json', 'r+') as f:
         logs = json.load(f)

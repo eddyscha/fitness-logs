@@ -6,6 +6,10 @@
                 {
                     "activity": "gym",
                     "time": 1
+                },
+                {
+                    "activity": "cycle",
+                    "time": 1
                 }
             ]
         }
