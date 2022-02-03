@@ -19,16 +19,24 @@ class Logs(BaseModel):
 
 app = FastAPI()
 
-@app.get("/")
-async def get_logs():
-    with open('logs.json') as f:
+@app.get("/activities")
+async def get_activities():
+    with open('data/activities.json') as f:
         logs = json.load(f)
-        m = parse_obj_as(Logs, logs)
-        return m
+        return logs
 
-@app.post("/add/")
+@app.get("/weights")
+async def get_weights():
+    with open('data/weight.json') as f:
+        logs = json.load(f)
+        return logs
+
+@app.post("/activities/add")
 async def add_logs(log: Log):
-    with open('logs.json', 'r+') as f:
+    with open('data/activities.json', 'r+') as f:
         logs = json.load(f)
-        m = parse_obj_as(Logs, logs)
 
+@app.post("/weights/add")
+async def add_logs(log: Log):
+    with open('data/weights.json', 'r+') as f:
+        logs = json.load(f)
