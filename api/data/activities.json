@@ -12,6 +12,15 @@
                     "time": 1
                 }
             ]
+        },
+        {
+            "date": "02-04-2022",
+            "activities": [
+                {
+                    "activity": "cycle",
+                    "time": 1
+                }
+            ]
         }
     ]
 }
