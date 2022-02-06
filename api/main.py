@@ -5,6 +5,7 @@ from datetime import date
 
 from fastapi import FastAPI
 from pydantic import BaseModel, parse_obj_as
+import psycopg2
 
 class Activity(BaseModel):
     id: int
@@ -18,6 +19,11 @@ class Log(BaseModel):
 class Logs(BaseModel):
     data: List[Log]
 
+conn = psycopg2.connect(
+    host="localhost",
+    database="fitness_logs",
+    user="postgres",
+    password="postgres")
 
 app = FastAPI()
 
