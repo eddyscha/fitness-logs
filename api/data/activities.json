@@ -1,31 +1,35 @@
 {
     "data": [
         {
-            "date": "02-02-2022",
+            "date": "2022-02-02",
             "activities": [
                 {
+                    "id": 1,
                     "activity": "gym",
                     "time": 1
                 },
                 {
+                    "id": 2,
                     "activity": "cycle",
                     "time": 1
                 }
             ]
         },
         {
-            "date": "02-04-2022",
+            "date": "2022-02-04",
             "activities": [
                 {
+                    "id": 3,
                     "activity": "cycle",
                     "time": 1
                 }
             ]
         },
         {
-            "date": "02-05-2022",
+            "date": "2022-02-05",
             "activities": [
                 {
+                    "id": 4,
                     "activity": "cycle",
                     "time": 2
                 }

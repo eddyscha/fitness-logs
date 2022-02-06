@@ -1,2 +1,2 @@
 run:
-	cd fitness-logs && uvicorn main:app --reload
+	cd api && uvicorn main:app --reload
