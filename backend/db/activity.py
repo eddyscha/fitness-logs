@@ -1,9 +1,16 @@
+from dataclasses import dataclass
+from datetime import datetime
 from sqlalchemy import Column, Integer, String
 
 from .base import Base
 
+@dataclass
 class Activity(Base):
     __tablename__ = 'activity'
+
+    id: int
+    activity: str
+    time: datetime
 
     id = Column(Integer, primary_key=True)
 
