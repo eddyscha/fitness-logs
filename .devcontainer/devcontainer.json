@@ -1,5 +1,5 @@
 {
-	"name": "Fitness Logs",
+	"name": "Python 3 & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspace",
@@ -21,12 +21,8 @@
 	},
 
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
 	],
-
-	"forwardPorts": [5432],
-
-	// "postCreateCommand": "psql -U postgres -tc \"SELECT 1 FROM postgres WHERE datname = 'fitness_logs'\" | grep -q 1 || psql -U postgres -c \"CREATE DATABASE fitness_logs\"",
 
 	"remoteUser": "vscode"
 }

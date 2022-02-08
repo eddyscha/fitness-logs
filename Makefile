@@ -1,2 +1,2 @@
-run:
-	cd api && uvicorn main:app --reload
+run-backend:
+	cd backend && python main.py

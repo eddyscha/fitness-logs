@@ -6,27 +6,26 @@ services:
       context: ..
       dockerfile: .devcontainer/Dockerfile
       args:
-        VARIANT: "3.10"
-    depends_on:
-      - db
+        VARIANT: 3-bullseye
+        NODE_VERSION: "none"
     volumes:
       - ..:/workspace:cached
     command: sleep infinity
-    ports:
-      - 8000:8000
+    network_mode: service:db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
 
   db:
     image: postgres:latest
     restart: unless-stopped
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ../sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
       POSTGRES_PASSWORD: postgres
-    ports:
-      - 5432:5432
 
 volumes:
   postgres-data: null
