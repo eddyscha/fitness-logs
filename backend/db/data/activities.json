@@ -34,6 +34,16 @@
                     "time": 2
                 }
             ]
+        },
+        {
+            "date": "2022-02-07",
+            "activities": [
+                {
+                    "id": 5,
+                    "activity": "gym",
+                    "time": 1
+                }
+            ]
         }
     ]
 }
