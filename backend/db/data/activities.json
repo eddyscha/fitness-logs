@@ -42,6 +42,21 @@
                     "id": 5,
                     "activity": "gym",
                     "time": 1
+                },
+                {
+                    "id": 6,
+                    "activity": "cycle",
+                    "time": 1
+                }
+            ]
+        },
+        {
+            "date": "2022-02-08",
+            "activities": [
+                {
+                    "id": 7,
+                    "activity": "run",
+                    "time": 0.5
                 }
             ]
         }
