@@ -1,6 +1,6 @@
 # Fitness Logs
 
-A personal record of my fitness logs for visualisation, analysis, and sharing with coaches. Currently a long-term WIP :) 
+A personal record of my fitness logs for visualisation, analysis, and sharing with coaches. Currently a WIP :) 
 
 ## Development Environment
 
