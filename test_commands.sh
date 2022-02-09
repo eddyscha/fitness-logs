@@ -1,12 +1,8 @@
 #!/bin/bash
 
 # GET /activities/
-curl http://127.0.0.1:8000/activities
+curl localhost:5000/activities/2022-02-02
 
-# GET /activities/{activity_id}
-curl http://127.0.0.1:8000/activities/7
+# GET /weight/
+curl localhost:5000/weight/2022-02-02
 
-# POST /activities/
-curl -X POST http://127.0.0.1:8000/activities -H 'Content-Type: application/json' -d
-
-# DELETE /activities/{activity_id}
