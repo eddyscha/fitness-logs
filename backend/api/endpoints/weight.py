@@ -7,6 +7,7 @@ from db.weight import Weight
 class LogsApi(Resource):
     def get(self, date):
         session = Session()
-
         logs = session.query(Weight).filter(Weight.date == date).all()
+        session.close()
+
         return jsonify(logs)

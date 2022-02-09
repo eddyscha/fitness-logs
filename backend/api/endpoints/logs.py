@@ -7,6 +7,7 @@ from db.logs import Logs
 class LogsApi(Resource):
     def get(self, date):
         session = Session()
-
         logs = session.query(Logs).filter(Logs.date == date).all()
+        session.close()
+
         return jsonify(logs)
