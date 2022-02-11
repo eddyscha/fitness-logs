@@ -79,6 +79,16 @@
                     "time": 0.5
                 }
             ]
+        },
+        {
+            "date": "2022-02-11",
+            "activities": [
+                {
+                    "id": 10,
+                    "activity": "cycle",
+                    "time": 1
+                }
+            ]
         }
     ]
 }
